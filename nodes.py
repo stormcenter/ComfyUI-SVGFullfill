@@ -18,8 +18,8 @@ class SVGUploader:
             "svg_string": ("STRING", {"default": "", "multiline": False, "visible": False}),
         }}
     
-    RETURN_TYPES = ("SVG_FILE",)
-    RETURN_NAMES = ("svg_file",)
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("svg_text",)
     OUTPUT_NODE = True
     FUNCTION = "upload_svg"
     CATEGORY = "SVGFullfill"
@@ -54,7 +54,7 @@ class SVGEditor:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "svg_file": ("SVG_FILE",),
+                "svg_text": ("STRING", {"multiline": True}),
             },
             "optional": {
                 "image1": ("IMAGE", {"default": None}),
@@ -77,16 +77,16 @@ class SVGEditor:
     FUNCTION = "edit_svg"
     CATEGORY = "SVGFullfill"
 
-    def edit_svg(self, svg_file, image1=None, image2=None, image3=None, **kwargs):
+    def edit_svg(self, svg_text, image1=None, image2=None, image3=None, **kwargs):
         try:
-            if not svg_file or len(svg_file.strip()) == 0:
+            if not svg_text or len(svg_text.strip()) == 0:
                 print("No SVG content received")
                 blank_image = torch.zeros((1, 64, 64, 3))
                 return (blank_image,)
             
             # 使用XML解析器处理SVG
             parser = ET.XMLParser(encoding='utf-8')
-            root = ET.fromstring(svg_file.encode('utf-8'), parser=parser)
+            root = ET.fromstring(svg_text.encode('utf-8'), parser=parser)
             
             # 在处理文本之前，添加字体样式定义
             # 查找或创建 defs 元素
