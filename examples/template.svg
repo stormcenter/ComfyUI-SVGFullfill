@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- 标题文本 -->
+  <text id="text1" x="400" y="80" font-family="Arial" font-size="40" text-anchor="middle" fill="#333333">
+    主标题文本
+  </text>
+  
+  <!-- 副标题 -->
+  <text id="text2" x="400" y="130" font-family="Arial" font-size="24" text-anchor="middle" fill="#666666">
+    副标题内容
+  </text>
+  
+  <!-- 左侧图片位置 -->
+  <image id="image1" x="50" y="180" width="200" height="200" xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAxPC90ZXh0Pjwvc3ZnPg=="/>
+  
+  <!-- 中间图片位置 -->
+  <image id="image2" x="300" y="180" width="200" height="200" xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAyPC90ZXh0Pjwvc3ZnPg=="/>
+  
+  <!-- 右侧图片位置 -->
+  <image id="image3" x="550" y="180" width="200" height="200" xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAzPC90ZXh0Pjwvc3ZnPg=="/>
+  
+  <!-- 描述文本 -->
+  <text id="text3" x="100" y="420" font-family="Arial" font-size="18" fill="#444444">
+    左侧描述文本
+  </text>
+  
+  <text id="text4" x="400" y="420" font-family="Arial" font-size="18" text-anchor="middle" fill="#444444">
+    中间描述文本
+  </text>
+  
+  <text id="text5" x="700" y="420" font-family="Arial" font-size="18" text-anchor="end" fill="#444444">
+    右侧描述文本
+  </text>
+  
+  <!-- 底部文本区域 -->
+  <text id="text6" x="400" y="480" font-family="Arial" font-size="16" text-anchor="middle" fill="#666666">
+    底部补充说明文本1
+  </text>
+  
+  <text id="text7" x="400" y="510" font-family="Arial" font-size="16" text-anchor="middle" fill="#666666">
+    底部补充说明文本2
+  </text>
+  
+  <text id="text8" x="400" y="540" font-family="Arial" font-size="16" text-anchor="middle" fill="#666666">
+    底部补充说明文本3
+  </text>
+  
+  <!-- 页脚文本 -->
+  <text id="text9" x="50" y="580" font-family="Arial" font-size="14" fill="#999999">
+    左侧页脚文本
+  </text>
+  
+  <text id="text10" x="750" y="580" font-family="Arial" font-size="14" text-anchor="end" fill="#999999">
+    右侧页脚文本
+  </text>
+</svg>

@@ -1,0 +1,185 @@
+{
+  "last_node_id": 16,
+  "last_link_id": 8,
+  "nodes": [
+    {
+      "id": 15,
+      "type": "SVGEditor",
+      "pos": {
+        "0": -837,
+        "1": 112
+      },
+      "size": {
+        "0": 400,
+        "1": 586
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "svg_file",
+          "type": "SVG_FILE",
+          "link": 7,
+          "label": "svg_file"
+        },
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7,
+          "label": "image1"
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7,
+          "label": "image2"
+        },
+        {
+          "name": "image3",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7,
+          "label": "image3"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8
+          ],
+          "slot_index": 0,
+          "label": "IMAGE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SVGEditor"
+      },
+      "widgets_values": [
+        "11111",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 14,
+      "type": "SVGUploader",
+      "pos": {
+        "0": -1389,
+        "1": 116
+      },
+      "size": {
+        "0": 422.3057556152344,
+        "1": 513.9155883789062
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "svg_file",
+          "type": "SVG_FILE",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "label": "svg_file"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SVGUploader"
+      },
+      "widgets_values": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"800\" height=\"600\" viewBox=\"0 0 800 600\">\n  <!-- 背景 -->\n  <rect width=\"100%\" height=\"100%\" fill=\"#f0f0f0\"/>\n  \n  <!-- 标题文本 -->\n  <text id=\"text1\" x=\"400\" y=\"80\" font-family=\"Arial\" font-size=\"40\" text-anchor=\"middle\" fill=\"#333333\">\n    主标题文本\n  </text>\n  \n  <!-- 副标题 -->\n  <text id=\"text2\" x=\"400\" y=\"130\" font-family=\"Arial\" font-size=\"24\" text-anchor=\"middle\" fill=\"#666666\">\n    副标题内容\n  </text>\n  \n  <!-- 左侧图片位置 -->\n  <image id=\"image1\" x=\"50\" y=\"180\" width=\"200\" height=\"200\" xlink:href=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAxPC90ZXh0Pjwvc3ZnPg==\"/>\n  \n  <!-- 中间图片位置 -->\n  <image id=\"image2\" x=\"300\" y=\"180\" width=\"200\" height=\"200\" xlink:href=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAyPC90ZXh0Pjwvc3ZnPg==\"/>\n  \n  <!-- 右侧图片位置 -->\n  <image id=\"image3\" x=\"550\" y=\"180\" width=\"200\" height=\"200\" xlink:href=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjNjY2NjY2Ij5JbWFnZSAzPC90ZXh0Pjwvc3ZnPg==\"/>\n  \n  <!-- 描述文本 -->\n  <text id=\"text3\" x=\"100\" y=\"420\" font-family=\"Arial\" font-size=\"18\" fill=\"#444444\">\n    左侧描述文本\n  </text>\n  \n  <text id=\"text4\" x=\"400\" y=\"420\" font-family=\"Arial\" font-size=\"18\" text-anchor=\"middle\" fill=\"#444444\">\n    中间描述文本\n  </text>\n  \n  <text id=\"text5\" x=\"700\" y=\"420\" font-family=\"Arial\" font-size=\"18\" text-anchor=\"end\" fill=\"#444444\">\n    右侧描述文本\n  </text>\n  \n  <!-- 底部文本区域 -->\n  <text id=\"text6\" x=\"400\" y=\"480\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\" fill=\"#666666\">\n    底部补充说明文本1\n  </text>\n  \n  <text id=\"text7\" x=\"400\" y=\"510\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\" fill=\"#666666\">\n    底部补充说明文本2\n  </text>\n  \n  <text id=\"text8\" x=\"400\" y=\"540\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\" fill=\"#666666\">\n    底部补充说明文本3\n  </text>\n  \n  <!-- 页脚文本 -->\n  <text id=\"text9\" x=\"50\" y=\"580\" font-family=\"Arial\" font-size=\"14\" fill=\"#999999\">\n    左侧页脚文本\n  </text>\n  \n  <text id=\"text10\" x=\"750\" y=\"580\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"end\" fill=\"#999999\">\n    右侧页脚文本\n  </text>\n</svg>\n",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -358,
+        "1": 109
+      },
+      "size": [
+        455.8845222550208,
+        406.6712703372059
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8,
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      2,
+      1,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      10,
+      0,
+      1,
+      0,
+      "SVG_FILE"
+    ],
+    [
+      7,
+      14,
+      0,
+      15,
+      0,
+      "SVG_FILE"
+    ],
+    [
+      8,
+      15,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5445000000000001,
+      "offset": [
+        784.5764511150434,
+        328.22220991991054
+      ]
+    }
+  },
+  "version": 0.4
+}
