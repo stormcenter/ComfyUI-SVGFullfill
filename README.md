@@ -2,6 +2,8 @@
 
 A ComfyUI custom node that enables SVG file integration and editing. This node allows you to upload SVG files, preview them in real-time, replace images and text elements within the SVG, and export the result as a PNG image.
 
+![Screenshot](./examples/Screenshot_2024-11-24_15-39-43.png)
+
 ## Features
 
 - 🖼️ SVG file upload and preview
