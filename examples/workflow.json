@@ -1,87 +1,45 @@
 {
-  "last_node_id": 16,
-  "last_link_id": 8,
+  "last_node_id": 21,
+  "last_link_id": 16,
   "nodes": [
     {
-      "id": 15,
-      "type": "SVGEditor",
+      "id": 16,
+      "type": "PreviewImage",
       "pos": {
-        "0": -837,
-        "1": 112
+        "0": -358,
+        "1": 109
       },
       "size": {
-        "0": 400,
-        "1": 586
+        "0": 416.7030944824219,
+        "1": 456.4433288574219
       },
       "flags": {},
-      "order": 1,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
-          "name": "svg_file",
-          "type": "SVG_FILE",
-          "link": 7,
-          "label": "svg_file"
-        },
-        {
-          "name": "image1",
+          "name": "images",
           "type": "IMAGE",
-          "link": null,
-          "shape": 7,
-          "label": "image1"
-        },
-        {
-          "name": "image2",
-          "type": "IMAGE",
-          "link": null,
-          "shape": 7,
-          "label": "image2"
-        },
-        {
-          "name": "image3",
-          "type": "IMAGE",
-          "link": null,
-          "shape": 7,
-          "label": "image3"
+          "link": 13,
+          "label": "images"
         }
       ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            8
-          ],
-          "slot_index": 0,
-          "label": "IMAGE"
-        }
-      ],
+      "outputs": [],
       "properties": {
-        "Node name for S&R": "SVGEditor"
+        "Node name for S&R": "PreviewImage"
       },
-      "widgets_values": [
-        "11111",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "widgets_values": []
     },
     {
-      "id": 14,
-      "type": "SVGUploader",
+      "id": 18,
+      "type": "LoadImage",
       "pos": {
-        "0": -1389,
-        "1": 116
+        "0": -1760,
+        "1": 399
       },
       "size": {
-        "0": 422.3057556152344,
-        "1": 513.9155883789062
+        "0": 315,
+        "1": 314
       },
       "flags": {},
       "order": 0,
@@ -89,13 +47,133 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "svg_file",
-          "type": "SVG_FILE",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            7
+            14
           ],
           "slot_index": 0,
-          "label": "svg_file"
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "40ae3f5effed1a2002dff8acf4cb9fe49fb0cce7af05bac660c56f76fab7021d.png",
+        "image"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "LoadImage",
+      "pos": {
+        "0": -1758,
+        "1": 890
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15
+          ],
+          "slot_index": 0,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "64a62f03509eb2a5267ee784606cb90250c02a5a6256b5af466512ef08bd1c1b.png",
+        "image"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "LoadImage",
+      "pos": {
+        "0": -1366,
+        "1": 949
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            16
+          ],
+          "slot_index": 0,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "21312.png",
+        "image"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "SVGUploader",
+      "pos": {
+        "0": -1686,
+        "1": -167
+      },
+      "size": {
+        "0": 422.3057556152344,
+        "1": 513.9155883789062
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "svg_text",
+          "type": "STRING",
+          "links": [
+            12
+          ],
+          "slot_index": 0,
+          "label": "svg_text"
         }
       ],
       "properties": {
@@ -108,32 +186,77 @@
       ]
     },
     {
-      "id": 16,
-      "type": "PreviewImage",
+      "id": 21,
+      "type": "SVGEditor",
       "pos": {
-        "0": -358,
-        "1": 109
+        "0": -936,
+        "1": 229
       },
       "size": [
-        455.8845222550208,
-        406.6712703372059
+        400,
+        616
       ],
       "flags": {},
-      "order": 2,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
+          "name": "image1",
           "type": "IMAGE",
-          "link": 8,
-          "label": "images"
+          "link": 14,
+          "shape": 7,
+          "label": "image1"
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 15,
+          "shape": 7,
+          "label": "image2"
+        },
+        {
+          "name": "image3",
+          "type": "IMAGE",
+          "link": 16,
+          "shape": 7,
+          "label": "image3"
+        },
+        {
+          "name": "svg_text",
+          "type": "STRING",
+          "link": 12,
+          "widget": {
+            "name": "svg_text"
+          }
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            13
+          ],
+          "label": "IMAGE",
+          "slot_index": 0
+        }
+      ],
       "properties": {
-        "Node name for S&R": "PreviewImage"
+        "Node name for S&R": "SVGEditor"
       },
-      "widgets_values": []
+      "widgets_values": [
+        "",
+        "你好111111",
+        "你好222222",
+        "你好33333",
+        "你好44444",
+        "你好55555",
+        "你好666666",
+        "你好7777777",
+        "你好8888888",
+        "你好89999",
+        "你好00000"
+      ]
     }
   ],
   "links": [
@@ -154,19 +277,43 @@
       "SVG_FILE"
     ],
     [
-      7,
+      12,
       14,
       0,
-      15,
-      0,
-      "SVG_FILE"
+      21,
+      3,
+      "STRING"
     ],
     [
-      8,
-      15,
+      13,
+      21,
       0,
       16,
       0,
+      "IMAGE"
+    ],
+    [
+      14,
+      18,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      19,
+      0,
+      21,
+      1,
+      "IMAGE"
+    ],
+    [
+      16,
+      20,
+      0,
+      21,
+      2,
       "IMAGE"
     ]
   ],
@@ -174,10 +321,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5445000000000001,
+      "scale": 0.5989500000000003,
       "offset": [
-        784.5764511150434,
-        328.22220991991054
+        2313.3938213401343,
+        250.86189784736874
       ]
     }
   },
