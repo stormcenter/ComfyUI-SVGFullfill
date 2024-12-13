@@ -84,6 +84,40 @@ class SVGEditor:
                 blank_image = torch.zeros((1, 64, 64, 3))
                 return (blank_image,)
             
+            # 解析SVG获取尺寸
+            parser = ET.XMLParser(encoding='utf-8')
+            root = ET.fromstring(svg_text.encode('utf-8'), parser=parser)
+            
+            # 获取SVG的宽度和高度
+            width = root.get('width')
+            height = root.get('height')
+            
+            # 如果宽高使用百分比或其他单位，需要处理
+            def parse_dimension(value):
+                if value is None:
+                    return 800  # 默认值
+                # 移除单位（px、pt等）
+                value = re.sub(r'[^0-9.]', '', value)
+                try:
+                    return int(float(value))
+                except ValueError:
+                    return 800  # 转换失败时的默认值
+            
+            output_width = parse_dimension(width)
+            output_height = parse_dimension(height)
+            
+            # 获取viewBox属性
+            viewbox = root.get('viewBox')
+            if viewbox and not (width or height):
+                # viewBox格式：min-x min-y width height
+                try:
+                    vb_parts = [float(x) for x in viewbox.split()]
+                    if len(vb_parts) == 4:
+                        output_width = int(vb_parts[2])
+                        output_height = int(vb_parts[3])
+                except ValueError:
+                    pass
+            
             # 使用XML解析器处理SVG
             parser = ET.XMLParser(encoding='utf-8')
             root = ET.fromstring(svg_text.encode('utf-8'), parser=parser)
@@ -154,8 +188,8 @@ class SVGEditor:
             # 使用cairosvg进行转换
             png_data = cairosvg.svg2png(
                 bytestring=svg_content.encode('utf-8'),
-                output_width=800,
-                output_height=600,
+                output_width=output_width,
+                output_height=output_height,
                 scale=1.0,
                 background_color='white',
                 unsafe=True,
