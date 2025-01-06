@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-svgfullfill"
+description = "ComfyUI-SVGFullfill is a custom node for ComfyUI that handles SVG file processing. Key features: - SVG file upload and preview - Replace images (up to 3) and text elements (up to 10) in SVG - Chinese font support - Real-time canvas preview - PNG export"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["Pillow>=9.0.0", "cairosvg>=2.7.0", "numpy>=1.22.0"]
+
+[project.urls]
+Repository = "https://github.com/stormcenter/ComfyUI-SVGFullfill"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-SVGFullfill"
+Icon = ""
